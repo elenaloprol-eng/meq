@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuestionario MEQ Autocalculable Completo</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; }
+  h1 { color: #333; }
+  .question { margin-bottom: 15px; }
+  .result { margin-top: 20px; font-weight: bold; color: #0066cc; white-space: pre-line; }
+  label { display: block; margin: 5px 0; }
+  button { margin-top: 20px; padding: 10px 15px; background-color: #0066cc; color: white; border: none; cursor: pointer; border-radius: 5px; }
+  button:hover { background-color: #004999; }
+</style>
+</head>
+<body>
+
+<h1>Horne-Östberg Morningness-Eveningness Questionnaire (MEQ) Completo</h1>
+<form id="meqForm">
+
+<!-- Preguntas 1 a 19 completas con opciones de puntuación según MEQ -->
+<div class="question">
+  <p>1. A qué hora se despierta habitualmente?</p>
+  <label><input type="radio" name="q1" value="5"> 5:00–6:00</label>
+  <label><input type="radio" name="q1" value="4"> 6:00–7:00</label>
+  <label><input type="radio" name="q1" value="3"> 7:00–8:00</label>
+  <label><input type="radio" name="q1" value="2"> 8:00–9:00</label>
+  <label><input type="radio" name="q1" value="1"> Después de 9:00</label>
+</div>
+
+<div class="question">
+  <p>2. A qué hora se acuesta habitualmente?</p>
+  <label><input type="radio" name="q2" value="5"> Antes de 21:00</label>
+  <label><input type="radio" name="q2" value="4"> 21:00–22:00</label>
+  <label><input type="radio" name="q2" value="3"> 22:00–23:00</label>
+  <label><input type="radio" name="q2" value="2"> 23:00–24:00</label>
+  <label><input type="radio" name="q2" value="1"> Después de medianoche</label>
+</div>
+
+<div class="question">
+  <p>3. Hora preferida para despertarse si no hubiera obligaciones:</p>
+  <label><input type="radio" name="q3" value="5"> Muy temprano (5:00–6:00)</label>
+  <label><input type="radio" name="q3" value="4"> Temprano (6:00–7:00)</label>
+  <label><input type="radio" name="q3" value="3"> Mediano (7:00–8:00)</label>
+  <label><input type="radio" name="q3" value="2"> Tarde (8:00–9:00)</label>
+  <label><input type="radio" name="q3" value="1"> Muy tarde (después de 9:00)</label>
+</div>
+
+<div class="question">
+  <p>4. Hora preferida para acostarse si no hubiera obligaciones:</p>
+  <label><input type="radio" name="q4" value="5"> Antes de 21:00</label>
+  <label><input type="radio" name="q4" value="4"> 21:00–22:00</label>
+  <label><input type="radio" name="q4" value="3"> 22:00–23:00</label>
+  <label><input type="radio" name="q4" value="2"> 23:00–24:00</label>
+  <label><input type="radio" name="q4" value="1"> Después de medianoche</label>
+</div>
+
+<div class="question">
+  <p>5. Nivel de alerta en la mañana al despertar:</p>
+  <label><input type="radio" name="q5" value="5"> Muy alerta</label>
+  <label><input type="radio" name="q5" value="4"> Algo alerta</label>
+  <label><input type="radio" name="q5" value="3"> Normal</label>
+  <label><input type="radio" name="q5" value="2"> Poco alerta</label>
+  <label><input type="radio" name="q5" value="1"> Muy somnoliento</label>
+</div>
+
+<div class="question">
+  <p>6. Nivel de alerta a media tarde:</p>
+  <label><input type="radio" name="q6" value="1"> Muy alerta</label>
+  <label><input type="radio" name="q6" value="2"> Algo alerta</label>
+  <label><input type="radio" name="q6" value="3"> Normal</label>
+  <label><input type="radio" name="q6" value="4"> Poco alerta</label>
+  <label><input type="radio" name="q6" value="5"> Muy somnoliento</label>
+</div>
+
+<div class="question">
+  <p>7. Nivel de alerta a las 10 de la noche:</p>
+  <label><input type="radio" name="q7" value="1"> Muy alerta</label>
+  <label><input type="radio" name="q7" value="2"> Algo alerta</label>
+  <label><input type="radio" name="q7" value="3"> Normal</label>
+  <label><input type="radio" name="q7" value="4"> Poco alerta</label>
+  <label><input type="radio" name="q7" value="5"> Muy somnoliento</label>
+</div>
+
+<!-- Preguntas 8 a 19 -->
+<div class="question">
+  <p>8. Preferencia para despertarse temprano los fines de semana:</p>
+  <label><input type="radio" name="q8" value="5"> Muy favorable</label>
+  <label><input type="radio" name="q8" value="4"> Favorable</label>
+  <label><input type="radio" name="q8" value="3"> Neutral</label>
+  <label><input type="radio" name="q8" value="2"> Poco favorable</label>
+  <label><input type="radio" name="q8" value="1"> Nada favorable</label>
+</div>
+
+<div class="question">
+  <p>9. Nivel de somnolencia al levantarse temprano:</p>
+  <label><input type="radio" name="q9" value="5"> Nada somnoliento</label>
+  <label><input type="radio" name="q9" value="4"> Poco somnoliento</label>
+  <label><input type="radio" name="q9" value="3"> Normal</label>
+  <label><input type="radio" name="q9" value="2"> Algo somnoliento</label>
+  <label><input type="radio" name="q9" value="1"> Muy somnoliento</label>
+</div>
+
+<div class="question">
+  <p>10. Nivel de actividad por la mañana:</p>
+  <label><input type="radio" name="q10" value="5"> Muy activo</label>
+  <label><input type="radio" name="q10" value="4"> Algo activo</label>
+  <label><input type="radio" name="q10" value="3"> Normal</label>
+  <label><input type="radio" name="q10" value="2"> Poco activo</label>
+  <label><input type="radio" name="q10" value="1"> Nada activo</label>
+</div>
+
+<div class="question">
+  <p>11. Hora preferida para realizar actividades intelectuales:</p>
+  <label><input type="radio" name="q11" value="5"> Muy temprano</label>
+  <label><input type="radio" name="q11" value="4"> Temprano</label>
+  <label><input type="radio" name="q11" value="3"> Medio</label>
+  <label><input type="radio" name="q11" value="2"> Tarde</label>
+  <label><input type="radio" name="q11" value="1"> Muy tarde</label>
+</div>
+
+<div class="question">
+  <p>12. Nivel de somnolencia a media mañana:</p>
+  <label><input type="radio" name="q12" value="5"> Nada somnoliento</label>
+  <label><input type="radio" name="q12" value="4"> Poco somnoliento</label>
+  <label><input type="radio" name="q12" value="3"> Normal</label>
+  <label><input type="radio" name="q12" value="2"> Algo somnoliento</label>
+  <label><input type="radio" name="q12" value="1"> Muy somnoliento</label>
+</div>
+
+<div class="question">
+  <p>13. Hora preferida para actividad física:</p>
+  <label><input type="radio" name="q13" value="5"> Muy temprano</label>
+  <label><input type="radio" name="q13" value="4"> Temprano</label>
+  <label><input type="radio" name="q13" value="3"> Medio</label>
+  <label><input type="radio" name="q13" value="2"> Tarde</label>
+  <label><input type="radio" name="q13" value="1"> Muy tarde</label>
+</div>
+
+<div class="question">
+  <p>14. Nivel de alerta al mediodía:</p>
+  <label><input type="radio" name="q14" value="5"> Muy alerta</label>
+  <label><input type="radio" name="q14" value="4"> Algo alerta</label>
+  <label><input type="radio" name="q14" value="3"> Normal</label>
+  <label><input type="radio" name="q14" value="2"> Poco alerta</label>
+  <label><input type="radio" name="q14" value="1"> Muy somnoliento</label>
+</div>
+
+<div class="question">
+  <p>15. Preferencia por levantarse temprano para compromisos:</p>
+  <label><input type="radio" name="q15" value="5"> Muy favorable</label>
+  <label><input type="radio" name="q15" value="4"> Bastante favorable</label>
+  <label><input type="radio" name="q15" value="3"> Neutral</label>
+  <label><input type="radio" name="q15" value="2"> Poco favorable</label>
+  <label><input type="radio" name="q15" value="1"> Nada favorable</label>
+</div>
+
+<div class="question">
+  <p>16. Preferencia por trabajar hasta tarde:</p>
+  <label><input type="radio" name="q16" value="5"> Nada favorable</label>
+  <label><input type="radio" name="q16" value="4"> Poco favorable</label>
+  <label><input type="radio" name="q16" value="3"> Neutral</label>
+  <label><input type="radio" name="q16" value="2"> Bastante favorable</label>
+  <label><input type="radio" name="q16" value="1"> Muy favorable</label>
+</div>
+
+<div class="question">
+  <p>17. Momento del día con mayor energía:</p>
+  <label><input type="radio" name="q17" value="5"> Muy temprano</label>
+  <label><input type="radio" name="q17" value="4"> Temprano</label>
+  <label><input type="radio" name="q17" value="3"> Medio</label>
+  <label><input type="radio" name="q17" value="2"> Tarde</label>
+  <label><input type="radio" name="q17" value="1"> Muy tarde</label>
+</div>
+
+<div class="question">
+  <p>18. Preferencia para acostarse tarde en fines de semana:</p>
+  <label><input type="radio" name="q18" value="5"> Nada favorable</label>
+  <label><input type="radio" name="q18" value="4"> Poco favorable</label>
+  <label><input type="radio" name="q18" value="3"> Neutral</label>
+  <label><input type="radio" name="q18" value="2"> Bastante favorable</label>
+  <label><input type="radio" name="q18" value="1"> Muy favorable</label>
+</div>
+
+<div class="question">
+  <p>19. Qué tan alerta se siente antes del desayuno:</p>
+  <label><input type="radio" name="q19" value="5"> Muy alerta</label>
+  <label><input type="radio" name="q19" value="4"> Algo alerta</label>
+  <label><input type="radio" name="q19" value="3"> Normal</label>
+  <label><input type="radio" name="q19" value="2"> Poco alerta</label>
+  <label><input type="radio" name="q19" value="1"> Muy somnoliento</label>
+</div>
+
+<button type="button" onclick="calcularMEQ()">Calcular Cronotipo</button>
+</form>
+
+<script>
+function calcularMEQ() {
+  let total = 0;
+  const form = document.getElementById('meqForm');
+  let respuestas = form.querySelectorAll('input[type=radio]:checked');
+
+  if(respuestas.length < 19) {
+    alert('Por favor, responde todas las preguntas (19).');
+    return;
+  }
+
+  respuestas.forEach(r => { total += parseInt(r.value); });
+
+  let interpretacion = '';
+  if(total >= 70) {
+    interpretacion = 'Matutino marcado';
+  } else if(total >= 59) {
+    interpretacion = 'Matutino moderado';
+  } else if(total >= 42) {
+    interpretacion = 'Intermedio';
+  } else if(total >= 31) {
+    interpretacion = 'Vespertino moderado';
+  } else {
+    interpretacion = 'Vespertino marcado';
+  }
+
+  document.getElementById('resultado').innerText = `Puntuación total: ${total}\nCronotipo: ${interpretacion}`;
+}
+</script>
+
+<div class="result" id="resultado"></div>
+
+</body>
+</html>
